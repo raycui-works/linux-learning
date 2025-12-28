@@ -50,12 +50,21 @@ ls -l fork_demo.c             # 查看文件是否存在、大小是否合理
 sed -n '1,40p' fork_demo.c     # 打印前 40 行，确认内容写对了
 ```
 
-## 二：编译代码文件
+## 二：编译代码文件（两种写法，选一种）
+假设你的文件叫 fork_demo.c：
 ```bash
-cc -o fork fork_demo.c
+gcc fork_demo.c -o fork_demo         # 编译 fork_demo.c，生成可执行文件 fork_demo
+```
+或如果你习惯用 cc：
+```bash
+cc fork_demo.c -o fork_demo          # cc 通常等价于 gcc（同样生成 fork_demo）
+```
+检查生成了没：
+```bash
+ls -la                               # 你应该能看到 fork_demo 这个可执行文件（没有 .c 后缀）
 ```
 
 ## 三：执行代码文件
 ```bash
-./fork
+./fork_demo                          # 运行当前目录下的可执行文件 fork_demo
 ```
