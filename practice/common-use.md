@@ -52,10 +52,10 @@ sed -n '1,40p' fork_demo.c     # 打印前 40 行，确认内容写对了
 
 ## 二：编译代码文件
 ```bash
-cc -o fork fork.c
+cc -o fork fork_demo.c
 ```
 
 ## 三：执行代码文件
 ```bash
-./fork
+./fork_demo
 ```
