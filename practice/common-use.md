@@ -44,3 +44,18 @@ int main(void)
 }
 EOF
 ```
+### Step 3：确认文件保存成功
+```bash
+ls -l fork_demo.c             # 查看文件是否存在、大小是否合理
+sed -n '1,40p' fork_demo.c     # 打印前 40 行，确认内容写对了
+```
+
+## 编译代码文件
+```bash
+cc -o fork fork.c
+```
+
+## 执行代码文件
+```bash
+./fork
+```
