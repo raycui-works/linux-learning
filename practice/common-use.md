@@ -57,5 +57,5 @@ cc -o fork fork_demo.c
 
 ## 三：执行代码文件
 ```bash
-./fork_demo
+./fork
 ```
